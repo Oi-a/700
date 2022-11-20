@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 .setRationaleMessage("카메라 권한이 필요합니다.")
                 .setDeniedMessage("거부하셨습니다.")
                 .setPermissions(Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA)
-                        .check();
+                .check();
 
 
         findViewById(R.id.btn_capture).setOnClickListener(new View.OnClickListener(){
@@ -118,26 +118,47 @@ public class MainActivity extends AppCompatActivity {
                                     String text = "";
                                     @Override
                                     public void onSuccess(Text visionText) {
+                                        //시 찾기
+                                        String[] city = {"인천"};
                                         for (Text.TextBlock block : visionText.getTextBlocks()) {
                                             String targetBlock = block.getText();
-                                             if(targetBlock.charAt(0) == '주' && targetBlock.charAt(1) == '소'){
-                                                 int idx = 0;
-                                                    if(targetBlock.charAt(2) == ':'){
-                                                        idx = 3;
+                                            int checkBit = -1;
+                                            for(int i = 0;i<city.length;i++){
+                                                checkBit = targetBlock.indexOf(city[i]);
+                                                if(checkBit != -1){
+                                                    break;
+                                                }
+                                            }
+                                            if(checkBit != -1){
+                                                for(;checkBit < targetBlock.length();checkBit++){
+                                                    char tmp = targetBlock.charAt(checkBit);
+                                                    if(tmp == ' ' || tmp == '-' || tmp == '(' || tmp == ')'){
+                                                        text += targetBlock.charAt(checkBit);
+                                                    }
+                                                    else if((tmp >= 33 && tmp <= 47) || (tmp >= 58 && tmp <= 64)
+                                                            || (tmp >= 91 && tmp <= 96) || (tmp >= 123 && tmp <= 126)) {
+
                                                     }
                                                     else{
-                                                        idx = 2;
+                                                        text += targetBlock.charAt(checkBit);
                                                     }
-                                                    for(;idx<targetBlock.length();idx++){
-                                                        text += targetBlock.charAt(idx);
-                                                    }
-                                             }
+                                                }
+                                                break;
+                                            }
+                                            else{
+                                                text = "정확한 주소를 입력해주세요.";
+                                            }
                                         }
 
                                         TextView target = (TextView)findViewById(R.id.target);
                                         target.setText(text);
-                                        // [END get_text]
-                                        // [END_EXCLUDE]
+
+                                        //intent로 주소값 전달
+                                        
+                                        //Intent intent = new Intent(MainActivity.this,SubActivity.class);
+                                        //intent.putExtra("address",text);
+                                        //startActivityForResult(intent);
+
                                     }
                                 })
                                 .addOnFailureListener(
@@ -166,32 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    private void processTextBlock(Text result) {
-        // [START mlkit_process_text_block]
-        String resultText = result.getText();
-        for (Text.TextBlock block : result.getTextBlocks()) {
-            String blockText = block.getText();
-            Point[] blockCornerPoints = block.getCornerPoints();
-            Rect blockFrame = block.getBoundingBox();
-            for (Text.Line line : block.getLines()) {
-                String lineText = line.getText();
-                Point[] lineCornerPoints = line.getCornerPoints();
-                Rect lineFrame = line.getBoundingBox();
-                for (Text.Element element : line.getElements()) {
-                    String elementText = element.getText();
-                    Point[] elementCornerPoints = element.getCornerPoints();
-                    Rect elementFrame = element.getBoundingBox();
-                    for (Text.Symbol symbol : element.getSymbols()) {
-                        String symbolText = symbol.getText();
-                        Point[] symbolCornerPoints = symbol.getCornerPoints();
-                        Rect symbolFrame = symbol.getBoundingBox();
-                    }
-                }
-            }
-        }
 
-        // [END mlkit_process_text_block]
-    }
 
     private int exifOrientationToDegrees(int exifOrientation){
         if(exifOrientation == ExifInterface.ORIENTATION_ROTATE_90){
