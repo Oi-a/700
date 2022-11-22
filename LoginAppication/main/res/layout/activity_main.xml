@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="70dp"
+        android:text="오늘의 코스"
+        android:fontFamily="@font/gang"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="ID"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <Button
+        android:layout_marginTop="150dp"
+        android:id="@+id/register"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="register"
+        android:background="@drawable/resource"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/login"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:background="@drawable/resource"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
