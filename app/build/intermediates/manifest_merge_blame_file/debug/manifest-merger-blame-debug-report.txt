@@ -1,0 +1,415 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ssz"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:6:22-62
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:7:22-77
+14
+15    <uses-feature
+15-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:9:5-11:35
+16        android:glEsVersion="0x00020000"
+16-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:10:9-41
+17        android:required="true" />
+17-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:11:9-32
+18    <uses-feature
+18-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:12:5-14:36
+19        android:name="android.hardware.wifi"
+19-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:13:9-45
+20        android:required="false" />
+20-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:14:9-33
+21
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:16:5-67
+22-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:16:22-64
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:17:5-79
+23-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:17:22-76
+24    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+24-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:18:5-76
+24-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:18:22-73
+25
+26    <application
+26-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:9:5-114:19
+27        android:name="com.example.ssz.AppData"
+27-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:10:9-32
+28        android:allowBackup="true"
+28-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:11:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.8.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:12:9-65
+31        android:debuggable="true"
+32        android:fullBackupContent="@xml/backup_rules"
+32-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:13:9-54
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:14:9-43
+34        android:label="@string/app_name"
+34-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:15:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:16:9-54
+36        android:supportsRtl="true"
+36-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:17:9-35
+37        android:theme="@style/Theme.Ssz" >
+37-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:18:9-41
+38        <activity
+38-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:20:9-30:20
+39            android:name="com.example.ssz.test.Login"
+39-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:21:13-39
+40            android:exported="true" >
+40-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:22:13-36
+41            <intent-filter>
+41-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:24:13-28:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:25:17-69
+42-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:25:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:26:17-77
+44-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:26:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:32:9-39:20
+48            android:name="com.example.ssz.test.Camera"
+48-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:33:13-40
+49            android:exported="true" >
+49-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:34:13-36
+50            <meta-data
+50-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+51                android:name="android.app.lib_name"
+51-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+52                android:value="" />
+52-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+53        </activity>
+54
+55        <provider
+55-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:41:9-49:20
+56            android:name="androidx.core.content.FileProvider"
+56-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:42:13-62
+57            android:authorities="com.example.ssz"
+57-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:43:13-50
+58            android:exported="false"
+58-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:44:13-37
+59            android:grantUriPermissions="true" >
+59-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:45:13-47
+60            <meta-data
+60-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:46:13-48:54
+61                android:name="android.support.FILE_PROVIDER_PATHS"
+61-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:47:17-67
+62                android:resource="@xml/file_paths" />
+62-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:48:17-51
+63        </provider>
+64
+65        <activity
+65-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:51:9-57:20
+66            android:name="com.example.ssz.test.UserPage4"
+66-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:52:13-43
+67            android:exported="false" >
+67-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:53:13-37
+68            <meta-data
+68-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+69                android:name="android.app.lib_name"
+69-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+70                android:value="" />
+70-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+71        </activity>
+72        <activity
+72-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:58:9-64:20
+73            android:name="com.example.ssz.test.UserPage3"
+73-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:59:13-43
+74            android:exported="false" >
+74-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:60:13-37
+75            <meta-data
+75-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+76                android:name="android.app.lib_name"
+76-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+77                android:value="" />
+77-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+78        </activity>
+79        <activity
+79-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:65:9-71:20
+80            android:name="com.example.ssz.test.RouteInfo"
+80-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:66:13-43
+81            android:exported="false" >
+81-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:67:13-37
+82            <meta-data
+82-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+83                android:name="android.app.lib_name"
+83-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+84                android:value="" />
+84-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+85        </activity>
+86        <activity
+86-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:72:9-78:20
+87            android:name="com.example.ssz.test.UserPage2"
+87-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:73:13-43
+88            android:exported="false" >
+88-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:74:13-37
+89            <meta-data
+89-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+90                android:name="android.app.lib_name"
+90-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+91                android:value="" />
+91-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+92        </activity>
+93        <activity
+93-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:79:9-85:20
+94            android:name="com.example.ssz.test.Comment"
+94-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:80:13-41
+95            android:exported="false" >
+95-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:81:13-37
+96            <meta-data
+96-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+97                android:name="android.app.lib_name"
+97-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+98                android:value="" />
+98-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+99        </activity>
+100        <activity
+100-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:86:9-93:20
+101            android:name="com.example.ssz.test.make_marker"
+101-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:87:13-45
+102            android:exported="true" >
+102-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:88:13-36
+103            <meta-data
+103-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+104                android:name="android.app.lib_name"
+104-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+105                android:value="" />
+105-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+106        </activity>
+107        <activity
+107-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:94:9-100:20
+108            android:name="com.example.ssz.test.ImageView"
+108-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:95:13-43
+109            android:exported="false" >
+109-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:96:13-37
+110            <meta-data
+110-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+111                android:name="android.app.lib_name"
+111-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+112                android:value="" />
+112-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+113        </activity>
+114        <activity
+114-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:101:9-109:20
+115            android:name="com.example.ssz.test.Home"
+115-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:102:13-38
+116            android:exported="true" >
+116-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:103:13-36
+117            <meta-data
+117-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:36:13-38:36
+118                android:name="android.app.lib_name"
+118-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:37:17-52
+119                android:value="" />
+119-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:38:17-33
+120        </activity>
+121
+122        <meta-data
+122-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:111:9-113:42
+123            android:name="com.naver.maps.map.CLIENT_ID"
+123-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:112:13-56
+124            android:value="edj3x74pdd" />
+124-->C:\Users\park.DESKTOP-3HQRGBS\AndroidStudioProjects\777\app\src\main\AndroidManifest.xml:113:13-39
+125
+126        <activity
+126-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\35c9c21313bda1baf265122da7438e65\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:10:9-14:67
+127            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+127-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\35c9c21313bda1baf265122da7438e65\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:11:13-75
+128            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+128-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\35c9c21313bda1baf265122da7438e65\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:12:13-144
+129            android:screenOrientation="unspecified"
+129-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\35c9c21313bda1baf265122da7438e65\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:13:13-52
+130            android:theme="@style/Theme.Transparent.Permission" />
+130-->[io.github.ParkSangGwon:tedpermission:2.3.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\35c9c21313bda1baf265122da7438e65\transformed\jetified-tedpermission-2.3.0\AndroidManifest.xml:14:13-64
+131        <activity
+131-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:21:9-25:51
+132            android:name="com.naver.maps.map.app.LegendActivity"
+132-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:22:13-65
+133            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+133-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:23:13-91
+134            android:label="@string/navermap_legend"
+134-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:24:13-52
+135            android:theme="@style/navermap_app" />
+135-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:25:13-48
+136        <activity
+136-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:26:9-30:51
+137            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+137-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:27:13-70
+138            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+138-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:28:13-91
+139            android:label="@string/navermap_legal_notice"
+139-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:29:13-58
+140            android:theme="@style/navermap_app" />
+140-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:30:13-48
+141        <activity
+141-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:31:9-35:51
+142            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+142-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:32:13-76
+143            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+143-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:33:13-91
+144            android:label="@string/navermap_open_source_license"
+144-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:34:13-65
+145            android:theme="@style/navermap_app" />
+145-->[com.naver.maps:map-sdk:3.16.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\92bfee3cbd557e1ef4ca3aad2fe986d7\transformed\jetified-map-sdk-3.16.0\AndroidManifest.xml:35:13-48
+146
+147        <service
+147-->[androidx.room:room-runtime:2.4.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\0562c348a2a8b7e1b606b40fae7c3638\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+148            android:name="androidx.room.MultiInstanceInvalidationService"
+148-->[androidx.room:room-runtime:2.4.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\0562c348a2a8b7e1b606b40fae7c3638\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+149            android:directBootAware="true"
+149-->[androidx.room:room-runtime:2.4.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\0562c348a2a8b7e1b606b40fae7c3638\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+150            android:exported="false" />
+150-->[androidx.room:room-runtime:2.4.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\0562c348a2a8b7e1b606b40fae7c3638\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+151        <service
+151-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:16:9-22:19
+152            android:name="com.google.firebase.components.ComponentDiscoveryService"
+152-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:17:13-84
+153            android:directBootAware="true"
+153-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+154            android:exported="false" >
+154-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:18:13-37
+155            <meta-data
+155-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
+156                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+156-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\493c3a94393fb2adec59600fc6179944\transformed\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
+158        </service>
+159        <service
+159-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
+160            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+160-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
+161            android:directBootAware="true"
+161-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
+162            android:exported="false" >
+162-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
+163            <meta-data
+163-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
+164                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+164-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
+165                android:value="com.google.firebase.components.ComponentRegistrar" />
+165-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\7c3a4edc4d8c6e8852cf1da2f8b76a7a\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
+166            <meta-data
+166-->[com.google.mlkit:vision-common:17.2.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
+167                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+167-->[com.google.mlkit:vision-common:17.2.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:13:17-124
+168                android:value="com.google.firebase.components.ComponentRegistrar" />
+168-->[com.google.mlkit:vision-common:17.2.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\3047901aab221a15e6364e9345f4691c\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:14:17-82
+169            <meta-data
+169-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
+170                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+170-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
+171                android:value="com.google.firebase.components.ComponentRegistrar" />
+171-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
+172        </service>
+173
+174        <provider
+174-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
+175            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+175-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
+176            android:authorities="com.example.ssz.mlkitinitprovider"
+176-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
+177            android:exported="false"
+177-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
+178            android:initOrder="99" />
+178-->[com.google.mlkit:common:18.5.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6199f4b5dca02766064dcf0936ed2f92\transformed\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
+179
+180        <activity
+180-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+181            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+181-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+182            android:exported="false"
+182-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+183            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+183-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\9164f9658c4cd5fa0c137f9a5fcf4fb0\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+184
+185        <provider
+185-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+186            android:name="com.google.firebase.provider.FirebaseInitProvider"
+186-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+187            android:authorities="com.example.ssz.firebaseinitprovider"
+187-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+188            android:directBootAware="true"
+188-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+189            android:exported="false"
+189-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+190            android:initOrder="100" />
+190-->[com.google.firebase:firebase-common:20.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\dc7803597803a1ddfce933714cfd7209\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+191
+192        <meta-data
+192-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+193            android:name="com.google.android.gms.version"
+193-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+194            android:value="@integer/google_play_services_version" />
+194-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\de6489bed9e6c347316284be579eccf0\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+195
+196        <provider
+196-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+197            android:name="androidx.startup.InitializationProvider"
+197-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+198            android:authorities="com.example.ssz.androidx-startup"
+198-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+199            android:exported="false" >
+199-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+200            <meta-data
+200-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+201                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+201-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+202                android:value="androidx.startup" />
+202-->[androidx.emoji2:emoji2:1.2.0] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\043ebb08fd1605c8d26eee8895b0fedf\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+203            <meta-data
+203-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+204                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+204-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+205                android:value="androidx.startup" />
+205-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\89ff0e55e6ae9f2bfe5511814da6c859\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+206        </provider>
+207
+208        <service
+208-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+209            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+209-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+210            android:exported="false" >
+210-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+211            <meta-data
+211-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+212                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+212-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+213                android:value="cct" />
+213-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\485d7c1ec84c03d1bb2b8417cb4dfa71\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+214        </service>
+215        <service
+215-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+216            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+216-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+217            android:exported="false"
+217-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+218            android:permission="android.permission.BIND_JOB_SERVICE" >
+218-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+219        </service>
+220
+221        <receiver
+221-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+222            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+222-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+223            android:exported="false" />
+223-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\park.DESKTOP-3HQRGBS\.gradle\caches\transforms-3\6dcd93541db5f9402a2177216c89b545\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+224    </application>
+225
+226</manifest>

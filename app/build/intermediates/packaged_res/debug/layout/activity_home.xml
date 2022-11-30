@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/gradient"
+    tools:context=".test.Home">
+
+    <Button
+
+        android:layout_marginRight="10dp"
+        android:id="@+id/c_route"
+        android:layout_width="130dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:background="@drawable/resource"
+        android:backgroundTint="#EDE7F6"
+        android:text="create course"></Button>
+
+    <Button
+
+        android:id="@+id/u_route"
+        android:layout_width="130dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:background="@drawable/resource"
+        android:backgroundTint="#EDE7F6"
+
+        android:text="using   course"></Button>
+</LinearLayout>
